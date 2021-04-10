@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<head>
+  <style>
+    body {
+      background-color: rgb(168, 168, 168);
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 1%;
+    }
+
+    h1 {
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 132, 255);
+      margin-left: 1%;
+      margin-right: 1%;
+      padding: 5px;
+      text-align: center;
+      border: 1px solid rgb(10, 90, 46);
+    }
+
+    h2 {
+      color: rgb(1, 46, 21);
+    }
+
+    div {
+      background-color: white;
+      padding: 2%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Control de servos</h1>
+    <p><b>Instrucciones: </b>Mueve las barras para colocar el servo en la posicion deseada: (0 - 180 grados)</p>
+    <hr />
+    <div ng-app="">
+      <b>Vertical:</b> <input type="range" id="PosVertical" ng-model="PosVertical" min="0" max="180" onmouseup="sendData()"> {{PosVertical}} Grados<br />
+      <b>Horizontal:</b> <input type="range" id="PosHorizontal" ng-model="PosHorizontal" min="0" max="180" onmouseup="sendData()"> {{PosHorizontal}} Grados
+    </div>
+  </div>
+  <script>
+    function sendData() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          console.log(this.responseText);
+        }
+      };
+
+      var posV = document.getElementById("PosVertical").value;
+      var posH = document.getElementById("PosHorizontal").value;
+
+      xhttp.open("GET", "setPOS?servoPOSH=" + posH + "&servoPOSV=" + posV + "&end=0", true);
+      xhttp.send();
+    }
+
+  </script>
+</body>
+
+</html>
