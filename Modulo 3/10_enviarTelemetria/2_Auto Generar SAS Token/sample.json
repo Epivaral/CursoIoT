@@ -1,0 +1,5 @@
+{
+  "resourceUri": "[IoTHub]/devices/[Dispositivo]",
+  "expiryInSeconds": 86400,
+  "key": "[Primary Key para el dispositivo]"
+}
