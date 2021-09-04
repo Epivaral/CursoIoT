@@ -1,0 +1,11 @@
+{
+  "frameworks": {
+    "net46": {
+      "dependencies": {
+        "Microsoft.Azure.Devices": "*",
+        "Microsoft.Azure.Amqp": "*",
+        "System.Data.SqlClient": "*"
+      }
+    }
+  }
+}
