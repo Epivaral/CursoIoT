@@ -77,7 +77,7 @@ Modulos IoT para este curso, no necesitas todos, con un NodeMCU es mas que sufic
 - Configuración de un simple sistema sensor-actuador
 - Configuración de un sistema simple de registro y respuesta de datos
 
-## Modulo 6: Otras configuraciones
+## Modulo 6: Otras configuraciones (* aun en progreso)
 - Sleep
 - Persistir data
 - OTA (over the air updates)
@@ -95,7 +95,7 @@ Modulos IoT para este curso, no necesitas todos, con un NodeMCU es mas que sufic
   - Consola de operación disponible en la nube
   - Configuración de alertas
 
-## Módulo 7: Escalado de nuestra aplicación IoT (modulo teórico)
+## Módulo 7: Escalado de nuestra aplicación IoT (modulo teórico) (* aun en progreso)
 - Que es una aplicación escalable
 - Consideraciones para hacer aplicaciones escalables.
 - Manejo de errores
