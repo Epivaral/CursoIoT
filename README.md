@@ -68,12 +68,12 @@ Material complementario <a href="/Modulo 3/">Aqui ⬇</a>
 
 ## Módulo 4: Análisis de datos
 Material complementario <a href="/Modulo 4/">Aqui ⬇</a>
-- Uso de procesos ETL para la limpieza y preparación de datos (servicios Azure)
-- Creación de un panel interactivo para visualizar los datos capturados (utilizando PowerBI)
+- <a href="https://www.youtube.com/watch?v=FtnQwAeIObw">Uso de procesos ETL para la limpieza y preparación de datos (servicios Azure)</a>
+- <a href="https://www.youtube.com/watch?v=Wg2sIpVqDMo">Creación de un panel interactivo para visualizar los datos capturados (utilizando PowerBI)</a>
 
-## Módulo 5: Retroalimentación del sistema
+## Módulo 5: Retroalimentación del sistema (* aun en progreso)
 Material complementario <a href="/Modulo 5/">Aqui ⬇</a>
-- Configuración de un simple sistema sensor-actuador
+- <a href="https://www.youtube.com/watch?v=tObz4KHemeo">Configuración de un simple sistema sensor-actuador</a>
 - Configuración de un sistema simple de registro y respuesta de datos
 
 ## Modulo 6: Otras configuraciones (* aun en progreso)
