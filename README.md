@@ -51,13 +51,13 @@ Material complementario <a href="/Modulo 2/">Aqui ⬇</a>
 
 ## Módulo 3: Habilitación de un dispositivo IoT para usar servicios en la nube
 Material complementario <a href="/Modulo 3/">Aqui ⬇</a>
-- Introducción a MicroPython
+- <a href="https://www.youtube.com/watch?v=0CmfkGMnhA4">Introducción a MicroPython</a>
   - Configurar nuestro dispositivo para usar Micropython
 - Configuración de nuestro dispositivo IoT para leer datos (librería WIFI)
-  - Network Scan
-  - Modo Station
-  - Modo Cliente
-  - Modo Access Point
+  - <a href="https://www.youtube.com/watch?v=t-UXmWUz__4">Network Scan</a>
+  - <a href="https://www.youtube.com/watch?v=sqay7rE_KRw">Modo Station</a>
+  - <a href="https://www.youtube.com/watch?v=PGnoUtts3Ok">Modo Cliente</a>
+  - <a href="https://www.youtube.com/watch?v=-z6-nZJdeBE">Modo Access Point</a>
   - Web Server y utilización de Angular para interfaz de usuario enriquecida
   - Desplegar lectura de sensores en web server
   - Controlar un servo en WebServer
