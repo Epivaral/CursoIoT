@@ -29,17 +29,17 @@ Modulos IoT para este curso, no necesitas todos, con un NodeMCU es mas que sufic
 
  ---
  ## Modulo 1: Conceptos básicos
-- Explicar qué es IoT y cómo puede ayudarnos.
-- Conceptos básicos de hardware: explicar que es y cómo funciona el módulo que utilizamos
-- Conceptos básicos de los sensores y actuadores: cómo funciona un sensor y cómo podemos medirlos
-- Conceptos básicos del software: qué es un servicio en la nube y los servicios que utilizamos (base de datos, programación, análisis de datos, visualización de datos) y cómo podemos comunicarnos con un dispositivo.
+- <a href="https://www.youtube.com/watch?v=HuZQsPen9S4">Explicar qué es IoT y cómo puede ayudarnos.</a>
+  - Conceptos básicos de hardware: explicar que es y cómo funciona el módulo que utilizamos
+  - Conceptos básicos de los sensores y actuadores: cómo funciona un sensor y cómo podemos medirlos
+  - Conceptos básicos del software: qué es un servicio en la nube y los servicios que utilizamos (base de datos, programación, análisis de datos, visualización de datos) y cómo podemos comunicarnos con un dispositivo.
 
 ## Módulo 2: Obtención de datos
-- Configuración y programación básica de nuestro dispositivo ESP8266
+- <a href="https://www.youtube.com/watch?v=DoEXbU-nT84">Configuración y programación básica de nuestro dispositivo ESP8266</a>
 - Ejemplo simple sobre cómo conectar distintos sensores y actuadores:
-  - Encender y apagar LED
-  - Push Button
-  - Intensidad de LED (PWM)
+  - <a href="https://www.youtube.com/watch?v=zQ4-adT0BSA">Encender y apagar LED</a>
+  - <a href="https://www.youtube.com/watch?v=ASPIfFUboGs">Push Button</a>
+  - <a href="https://www.youtube.com/watch?v=4Zcyb7DkYb8">Pulse Width Modulation</a>
   - LED RGB (PWM)
   - Potenciómetro (ADC)
   - Modulo Serial
