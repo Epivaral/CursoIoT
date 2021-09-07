@@ -58,13 +58,13 @@ Material complementario <a href="/Modulo 3/">Aqui ⬇</a>
   - <a href="https://www.youtube.com/watch?v=sqay7rE_KRw">Modo Station</a>
   - <a href="https://www.youtube.com/watch?v=PGnoUtts3Ok">Modo Cliente</a>
   - <a href="https://www.youtube.com/watch?v=-z6-nZJdeBE">Modo Access Point</a>
-  - Web Server y utilización de Angular para interfaz de usuario enriquecida
-  - Desplegar lectura de sensores en web server
-  - Controlar un servo en WebServer
+  - <a href="https://www.youtube.com/watch?v=HjbEAuQXr1M">Web Server y utilización de Angular para interfaz de usuario enriquecida</a>
+  - <a href="https://www.youtube.com/watch?v=RrHxOLSw3Jg">Desplegar lectura de sensores en web server</a>
+  - <a href="https://www.youtube.com/watch?v=dEINx31FY00">Controlar un servo en WebServer</a>
 - Comunicar nuestro dispositivo IoT a los servicios en la nube (Utilizando servicios de Azure)
-  - Conectarnos a Azure IoT Hub
-  - Enviar telemetría a Azure IoT Hub
-  - Recibir comandos desde Azure IoT Hub
+  - <a href="https://www.youtube.com/watch?v=akre5_b_Eys">Conectarnos a Azure IoT Hub</a>
+  - <a href="https://www.youtube.com/watch?v=BEc8bBKQDgU">Enviar telemetría a Azure IoT Hub</a>
+  - <a href="https://www.youtube.com/watch?v=g5eH2h7WpdI">Recibir comandos desde Azure IoT Hub</a>
 
 ## Módulo 4: Análisis de datos
 Material complementario <a href="/Modulo 4/">Aqui ⬇</a>
