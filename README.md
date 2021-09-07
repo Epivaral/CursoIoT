@@ -35,25 +35,22 @@ Modulos IoT para este curso, no necesitas todos, con un NodeMCU es mas que sufic
   - Conceptos básicos del software: qué es un servicio en la nube y los servicios que utilizamos (base de datos, programación, análisis de datos, visualización de datos) y cómo podemos comunicarnos con un dispositivo.
 
 ## Módulo 2: Obtención de datos
+Material complementario <a href="/Modulo 2/">Aqui ⬇</a>
 - <a href="https://www.youtube.com/watch?v=DoEXbU-nT84">Configuración y programación básica de nuestro dispositivo ESP8266</a>
 - Ejemplo simple sobre cómo conectar distintos sensores y actuadores:
   - <a href="https://www.youtube.com/watch?v=zQ4-adT0BSA">Encender y apagar LED</a>
   - <a href="https://www.youtube.com/watch?v=ASPIfFUboGs">Push Button</a>
   - <a href="https://www.youtube.com/watch?v=4Zcyb7DkYb8">Pulse Width Modulation</a>
-  - LED RGB (PWM)
-  - Potenciómetro (ADC)
-  - Modulo Serial
-  - Fotorresistencia (ADC)
-  - Sensor distancia (HC-SR04)
-  - Sensor humedad/temperatura (DHT22)
-  - Motor DC (Driver TB6612FNG)
-  - Buzzer (alertas auditivas)
-  - Servo
-  - Control temperatura análogo (TMP36)
-  - Sensor efecto hall (Interrupts)
-  - Pantalla OLED (I2C)
+  - <a href="https://www.youtube.com/watch?v=EF4Zmd-J-as">ADC</a>
+  - <a href="https://www.youtube.com/watch?v=Pde4dbyZxSI">Sensor distancia (HC-SR04)</a>
+  - <a href="https://www.youtube.com/watch?v=UKmICfz_fGk">Sensor humedad/temperatura (DHT22)</a>
+  - <a href="https://www.youtube.com/watch?v=NvnP0YtsOvw">Motor DC (Driver TB6612FNG)</a>
+  - <a href="https://www.youtube.com/watch?v=pxHsRv2epHE">Sensor efecto hall (Interrupts)</a>
+  - <a href="https://www.youtube.com/watch?v=9Lu98LXeJOA">Servo</a>
+  - <a href="https://www.youtube.com/watch?v=6NS6sh36p_A">Pantalla OLED (I2C)</a>
 
 ## Módulo 3: Habilitación de un dispositivo IoT para usar servicios en la nube
+Material complementario <a href="/Modulo 3/">Aqui ⬇</a>
 - Introducción a MicroPython
   - Configurar nuestro dispositivo para usar Micropython
 - Configuración de nuestro dispositivo IoT para leer datos (librería WIFI)
@@ -70,14 +67,17 @@ Modulos IoT para este curso, no necesitas todos, con un NodeMCU es mas que sufic
   - Recibir comandos desde Azure IoT Hub
 
 ## Módulo 4: Análisis de datos
+Material complementario <a href="/Modulo 4/">Aqui ⬇</a>
 - Uso de procesos ETL para la limpieza y preparación de datos (servicios Azure)
 - Creación de un panel interactivo para visualizar los datos capturados (utilizando PowerBI)
 
 ## Módulo 5: Retroalimentación del sistema
+Material complementario <a href="/Modulo 5/">Aqui ⬇</a>
 - Configuración de un simple sistema sensor-actuador
 - Configuración de un sistema simple de registro y respuesta de datos
 
 ## Modulo 6: Otras configuraciones (* aun en progreso)
+Material complementario <a href="/Modulo 6/">Aqui ⬇</a>
 - Sleep
 - Persistir data
 - OTA (over the air updates)
