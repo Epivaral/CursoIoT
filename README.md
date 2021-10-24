@@ -29,55 +29,55 @@ Modulos IoT para este curso, no necesitas todos, con un NodeMCU es mas que sufic
 
  ---
  ## Modulo 1: Conceptos básicos
-- Explicar qué es IoT y cómo puede ayudarnos.
-- Conceptos básicos de hardware: explicar que es y cómo funciona el módulo que utilizamos
-- Conceptos básicos de los sensores y actuadores: cómo funciona un sensor y cómo podemos medirlos
-- Conceptos básicos del software: qué es un servicio en la nube y los servicios que utilizamos (base de datos, programación, análisis de datos, visualización de datos) y cómo podemos comunicarnos con un dispositivo.
+- <a href="https://www.youtube.com/watch?v=HuZQsPen9S4">Explicar qué es IoT y cómo puede ayudarnos.</a>
+  - Conceptos básicos de hardware: explicar que es y cómo funciona el módulo que utilizamos
+  - Conceptos básicos de los sensores y actuadores: cómo funciona un sensor y cómo podemos medirlos
+  - Conceptos básicos del software: qué es un servicio en la nube y los servicios que utilizamos (base de datos, programación, análisis de datos, visualización de datos) y cómo podemos comunicarnos con un dispositivo.
 
 ## Módulo 2: Obtención de datos
-- Configuración y programación básica de nuestro dispositivo ESP8266
+Material complementario <a href="/Modulo 2/">Aqui ⬇</a>
+- <a href="https://www.youtube.com/watch?v=DoEXbU-nT84">Configuración y programación básica de nuestro dispositivo ESP8266</a>
 - Ejemplo simple sobre cómo conectar distintos sensores y actuadores:
-  - Encender y apagar LED
-  - Push Button
-  - Intensidad de LED (PWM)
-  - LED RGB (PWM)
-  - Potenciómetro (ADC)
-  - Modulo Serial
-  - Fotorresistencia (ADC)
-  - Sensor distancia (HC-SR04)
-  - Sensor humedad/temperatura (DHT22)
-  - Motor DC (Driver TB6612FNG)
-  - Buzzer (alertas auditivas)
-  - Servo
-  - Control temperatura análogo (TMP36)
-  - Sensor efecto hall (Interrupts)
-  - Pantalla OLED (I2C)
+  - <a href="https://www.youtube.com/watch?v=zQ4-adT0BSA">Encender y apagar LED</a>
+  - <a href="https://www.youtube.com/watch?v=ASPIfFUboGs">Push Button</a>
+  - <a href="https://www.youtube.com/watch?v=4Zcyb7DkYb8">Pulse Width Modulation</a>
+  - <a href="https://www.youtube.com/watch?v=EF4Zmd-J-as">ADC</a>
+  - <a href="https://www.youtube.com/watch?v=Pde4dbyZxSI">Sensor distancia (HC-SR04)</a>
+  - <a href="https://www.youtube.com/watch?v=UKmICfz_fGk">Sensor humedad/temperatura (DHT22)</a>
+  - <a href="https://www.youtube.com/watch?v=NvnP0YtsOvw">Motor DC (Driver TB6612FNG)</a>
+  - <a href="https://www.youtube.com/watch?v=pxHsRv2epHE">Sensor efecto hall (Interrupts)</a>
+  - <a href="https://www.youtube.com/watch?v=9Lu98LXeJOA">Servo</a>
+  - <a href="https://www.youtube.com/watch?v=6NS6sh36p_A">Pantalla OLED (I2C)</a>
 
 ## Módulo 3: Habilitación de un dispositivo IoT para usar servicios en la nube
-- Introducción a MicroPython
+Material complementario <a href="/Modulo 3/">Aqui ⬇</a>
+- <a href="https://www.youtube.com/watch?v=0CmfkGMnhA4">Introducción a MicroPython</a>
   - Configurar nuestro dispositivo para usar Micropython
 - Configuración de nuestro dispositivo IoT para leer datos (librería WIFI)
-  - Network Scan
-  - Modo Station
-  - Modo Cliente
-  - Modo Access Point
-  - Web Server y utilización de Angular para interfaz de usuario enriquecida
-  - Desplegar lectura de sensores en web server
-  - Controlar un servo en WebServer
+  - <a href="https://www.youtube.com/watch?v=t-UXmWUz__4">Network Scan</a>
+  - <a href="https://www.youtube.com/watch?v=sqay7rE_KRw">Modo Station</a>
+  - <a href="https://www.youtube.com/watch?v=PGnoUtts3Ok">Modo Cliente</a>
+  - <a href="https://www.youtube.com/watch?v=-z6-nZJdeBE">Modo Access Point</a>
+  - <a href="https://www.youtube.com/watch?v=HjbEAuQXr1M">Web Server y utilización de Angular para interfaz de usuario enriquecida</a>
+  - <a href="https://www.youtube.com/watch?v=RrHxOLSw3Jg">Desplegar lectura de sensores en web server</a>
+  - <a href="https://www.youtube.com/watch?v=dEINx31FY00">Controlar un servo en WebServer</a>
 - Comunicar nuestro dispositivo IoT a los servicios en la nube (Utilizando servicios de Azure)
-  - Conectarnos a Azure IoT Hub
-  - Enviar telemetría a Azure IoT Hub
-  - Recibir comandos desde Azure IoT Hub
+  - <a href="https://www.youtube.com/watch?v=akre5_b_Eys">Conectarnos a Azure IoT Hub</a>
+  - <a href="https://www.youtube.com/watch?v=BEc8bBKQDgU">Enviar telemetría a Azure IoT Hub</a>
+  - <a href="https://www.youtube.com/watch?v=g5eH2h7WpdI">Recibir comandos desde Azure IoT Hub</a>
 
 ## Módulo 4: Análisis de datos
-- Uso de procesos ETL para la limpieza y preparación de datos (servicios Azure)
-- Creación de un panel interactivo para visualizar los datos capturados (utilizando PowerBI)
+Material complementario <a href="/Modulo 4/">Aqui ⬇</a>
+- <a href="https://www.youtube.com/watch?v=FtnQwAeIObw">Uso de procesos ETL para la limpieza y preparación de datos (servicios Azure)</a>
+- <a href="https://www.youtube.com/watch?v=Wg2sIpVqDMo">Creación de un panel interactivo para visualizar los datos capturados (utilizando PowerBI)</a>
 
 ## Módulo 5: Retroalimentación del sistema
-- Configuración de un simple sistema sensor-actuador
-- Configuración de un sistema simple de registro y respuesta de datos
+Material complementario <a href="/Modulo 5/">Aqui ⬇</a>
+- <a href="https://www.youtube.com/watch?v=tObz4KHemeo">Configuración de un simple sistema sensor-actuador</a>
+- <a href="https://www.youtube.com/watch?v=U1Ahw6HjE5s">Configuración de un sistema simple de registro y respuesta de datos</a>
 
 ## Modulo 6: Otras configuraciones (* aun en progreso)
+Material complementario <a href="/Modulo 6/">Aqui ⬇</a>
 - Sleep
 - Persistir data
 - OTA (over the air updates)
