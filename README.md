@@ -78,10 +78,10 @@ Material complementario <a href="/Modulo 5/">Aqui ⬇</a>
 
 ## Modulo 6: Otras configuraciones (* aun en progreso)
 Material complementario <a href="/Modulo 6/">Aqui ⬇</a>
-- Sleep
-- Persistir data
-- OTA (over the air updates)
-- Otros boards mas potentes
+- <a href="https://www.youtube.com/watch?v=sraDWQduinE">Sleep</a>
+- <a href="https://www.youtube.com/watch?v=1ezEOdePxiU">Persistir data</a>
+- <a href="https://www.youtube.com/watch?v=_YsNYwx1vgc">OTA (over the air updates)</a>
+- <a href="https://www.youtube.com/watch?v=xAELw8mDLFM">Otros boards mas potentes</a>
   - ESP32
   - Raspberry PI
 - Dispositivos Edge (ejemplo utilizando Raspberry PI y ESP8266)
