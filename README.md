@@ -84,16 +84,13 @@ Material complementario <a href="/Modulo 6/">Aqui ⬇</a>
 - <a href="https://www.youtube.com/watch?v=xAELw8mDLFM">Otros boards mas potentes</a>
   - ESP32
   - Raspberry PI
-- Dispositivos Edge (ejemplo utilizando Raspberry PI y ESP8266)
-- Ejemplo real 1: Pronto
-- Ejemplo real 2: Pronto
-- Ejemplo real 3: monitor de calidad de aire para hogar (2 dispositivos)
-  - Monitorear calidad de aire/temperatura/humedad
-  - Encender/apagar cualquier maquinaria o equipo bajo niveles no adecuados
-  - Un dispositivo monitorea el aire
-  - Otro dispositivo se encarga de operar el equipo externo
-  - Consola de operación disponible en la nube
-  - Configuración de alertas
+- Ejemplo real/ejercicio sugerido :
+  - Oxímetro digital capaz de medir el oxígeno en la sangre por medio del sensor max30102 y un ESP 32.
+  - Lista de posibles funcionalidades:
+    - Diseño para ser portátil, optimizar el uso de batería siempre que sea posible
+    - Opción a conexión wifi, si no se tiene una red cerca, guardar mediciones en la memoria FLASH
+    - Control web con sistema de alarma en caso de que no se haya hecho medición en N horas
+
 
 ## Módulo 7: Escalado de nuestra aplicación IoT (modulo teórico) (* aun en progreso)
 - Que es una aplicación escalable
