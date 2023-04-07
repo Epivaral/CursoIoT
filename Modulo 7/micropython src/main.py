@@ -1,5 +1,5 @@
 import socket
-from max30102 import MAX30102, MAX30105_PULSE_AMP_MEDIUM
+from max30102 import MAX30102, MAX30105_PULSE_AMP_LOW
 import _thread
 from machine import sleep, SoftI2C, Pin 
 from utime import ticks_diff, ticks_us, ticks_ms
@@ -45,7 +45,9 @@ oled_width = 128
 oled_height = 64
 
 oled = ssd1306.SSD1306_I2C(oled_width, oled_height, i2c)
+
 oled.init_display()
+oled.contrast(0)
 
 toggle = True
 
@@ -166,7 +168,7 @@ sensor = MAX30102(i2c=i2c)
 sensor.setup_sensor()
 sensor.set_sample_rate(1000)
 sensor.set_fifo_average(32)
-sensor.set_active_leds_amplitude(MAX30105_PULSE_AMP_MEDIUM)
+sensor.set_active_leds_amplitude(MAX30105_PULSE_AMP_LOW)
 sensor.set_led_mode(2)
 sleep(1)
 
