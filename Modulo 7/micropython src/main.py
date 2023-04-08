@@ -1,5 +1,5 @@
 import socket
-from max30102 import MAX30102, MAX30105_PULSE_AMP_LOW
+from max30102 import MAX30102, MAX30105_PULSE_AMP_LOWER, MAX30105_PULSE_AMP_LOW, MAX30105_PULSE_AMP_MEDIUM
 import _thread
 from machine import sleep, SoftI2C, Pin 
 from utime import ticks_diff, ticks_us, ticks_ms
@@ -52,6 +52,9 @@ oled.contrast(0)
 toggle = True
 
 def despliegaMedida(spo2_,freq_, temp_, m):
+    if (oled.isOn == 0):
+        oled.poweron()
+        
     oled.fill(0)
     if (m):
         oled.text('Midiendo, espere...', 0, 0) 
@@ -61,13 +64,19 @@ def despliegaMedida(spo2_,freq_, temp_, m):
     oled.show()
     
 def despliegaTexto():
+    if (oled.isOn == 0):
+        oled.poweron()
+      
     oled.fill(0)
     oled.text('Presione dedo', 0, 30)
     oled.text('contra el sensor', 0, 40)
     oled.show()
     
     
+    
 def despliegaIP(IP):
+    if (oled.isOn == 0):
+        oled.poweron()
     oled.fill(0)
     oled.text('Direccion IP', 0, 30)
     oled.text(IP, 0, 40)
@@ -255,8 +264,9 @@ def get_BPM_SPO2():
                 
                 
             else:
-                if wake_1.value() !=1:
+                if wake_1.value() !=1 and oled.isOn == 1:
                     despliegaTexto()
+                    sensor.set_active_leds_amplitude(MAX30105_PULSE_AMP_LOW)  
                 beats = 0.00
                 led.off()
 
@@ -267,6 +277,9 @@ def get_BPM_SPO2():
 _thread.start_new_thread(get_BPM_SPO2, ())
 
 delta5s = 0
+deltaScreen = 0 # para la pantalla Oled
+tScreen = 0 #tiempo inactividad Oled (30 segundos)
+
 
 #tratamos de que la primera lectura sea guardada en el archivo data.dat
 # aun si solo se hace una lectura muy rapidamente antes del threshold (5 segundos)
@@ -278,17 +291,33 @@ while True:
             CargaPagina1()
         
         if(beats>50 and beats<180):
+            sensor.set_active_leds_amplitude(MAX30105_PULSE_AMP_MEDIUM)
+            tScreen = ticks_ms()
             
             despliegaMedida(spo2,beats, sensor.read_temperature(),False)
             delta5s = ticks_diff(ticks_ms(), t1)
             
-            if(delta5s>5000):
+            if(delta5s>10000):#guardamos al archivo cada 10 segundos
                 GuardaData(str(round(beats,2)),str(round(spo2,2))) #guardamos en el archivo
                 t1 = ticks_ms()
+                if habilitar_wifi == 1:
+                    msg = 'Spo2: '+str(spo2)+' BPM: '+str(beats)+ ' Temperatura: '+str(sensor.read_temperature())
+                    telegram.send_to_telegram(msg)
+                    
                 
         if(beats>30 and beats<50):
+            sensor.set_active_leds_amplitude(MAX30105_PULSE_AMP_MEDIUM)
+            tScreen = ticks_ms()
             despliegaMedida(spo2, beats, sensor.read_temperature(),True)
             
+        if(beats<30): #logica para apagar la pantalla despues de 15 segundos sin actividad para mayor duracion de bateria
+            deltaScreen = ticks_diff(ticks_ms(), tScreen)
+            if (deltaScreen>15000):
+                tScreen = ticks_ms()
+                if (oled.isOn == 1):
+                    oled.poweroff()
+                    sensor.set_active_leds_amplitude(MAX30105_PULSE_AMP_LOWER)
+                
             
         while (wake_1.value() ==1 and habilitar_wifi == 1):
             #mientras se tenga presionado, desplegar IP

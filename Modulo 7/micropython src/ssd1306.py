@@ -51,7 +51,7 @@ class SSD1306:
             SET_COM_PIN_CFG, 0x02 if self.height == 32 else 0x12,
             # timing and driving scheme
             SET_DISP_CLK_DIV, 0x80,
-            SET_PRECHARGE, 0x22 if self.external_vcc else 0xf1, #0x22 if self.external_vcc else 0xf1,
+            SET_PRECHARGE, 0x22 if self.external_vcc else 0xf1,
             SET_VCOM_DESEL,0x01 ,#0x30, # 0.83*Vcc
             # display
             SET_CONTRAST, 0x00, # maximum 0xff
@@ -65,6 +65,7 @@ class SSD1306:
         self.show()
 
     def poweroff(self):
+        self.isOn = 0
         self.write_cmd(SET_DISP | 0x00)
 
     def contrast(self, contrast):
@@ -103,6 +104,8 @@ class SSD1306:
 
 
 class SSD1306_I2C(SSD1306):
+    
+    
     def __init__(self, width, height, i2c, addr=0x3c, external_vcc=False):
         self.i2c = i2c
         self.addr = addr
@@ -116,6 +119,7 @@ class SSD1306_I2C(SSD1306):
         self.buffer[0] = 0x40  # Set first byte of data buffer to Co=0, D/C=1
         self.framebuf = framebuf.FrameBuffer1(memoryview(self.buffer)[1:], width, height)
         super().__init__(width, height, external_vcc)
+        self.isOn = 1
 
     def write_cmd(self, cmd):
         self.temp[0] = 0x80 # Co=1, D/C#=0
@@ -128,7 +132,8 @@ class SSD1306_I2C(SSD1306):
         self.i2c.writeto(self.addr, self.buffer)
 
     def poweron(self):
-        pass
+        self.isOn = 1
+        self.write_cmd(SET_DISP | 0x01)
 
 
 class SSD1306_SPI(SSD1306):

@@ -132,7 +132,8 @@ MAX30105_PULSE_WIDTH_215 = 0x02
 MAX30105_PULSE_WIDTH_411 = 0x03
 
 # LED brightness level. It affects the distance of detection.
-MAX30105_PULSE_AMP_LOWEST = 0x02  # 0.4mA  - Presence detection of ~4 inch
+#MAX30105_PULSE_AMP_LOWEST = 0x02  # 0.4mA  - Presence detection of ~4 inch
+MAX30105_PULSE_AMP_LOWER = 0x0B #Lower pulse for inactivity
 MAX30105_PULSE_AMP_LOW = 0x1F  # 6.4mA  - Presence detection of ~8 inch
 MAX30105_PULSE_AMP_MEDIUM = 0x7F  # 25.4mA - Presence detection of ~8 inch
 MAX30105_PULSE_AMP_HIGH = 0xFF  # 50.0mA - Presence detection of ~12 inch
