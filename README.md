@@ -85,7 +85,8 @@ Material complementario <a href="/Modulo 6/">Aqui ⬇</a>
   - ESP32
   - Raspberry PI
 
-## Módulo 7: Aplicacion real
+## Módulo 7: Aplicacion real (* En progreso)
+Material complementario <a href="/Modulo 7/">Aqui ⬇</a>
 - Oxímetro digital capaz de medir el oxígeno en la sangre por medio del sensor max30102 y un ESP 32.
   - Lista de posibles funcionalidades:
     - Diseño para ser portátil, optimizar el uso de batería siempre que sea posible
