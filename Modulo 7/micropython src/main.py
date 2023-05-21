@@ -26,7 +26,7 @@ led.value(1)
 rtc = machine.RTC()
 rtc.datetime((2022, 10, 21, 2, 10, 32, 36, 0))
 
-wifi_switch = machine.Pin(13,Pin.IN, None)
+wifi_switch = machine.Pin(1,Pin.IN, None)
 
 habilitar_wifi = wifi_switch.value()
 
