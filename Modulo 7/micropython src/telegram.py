@@ -1,9 +1,11 @@
+# codigo tomado de: https://www.shellhacks.com/python-send-message-to-telegram/
+
 import urequests
 
 def send_to_telegram(message):
 
-    apiToken = '6031609600:AAHR8ZT8Svj7jSIggKLksWj3a-Xc0VFn2dY'
-    chatID = '1531744252'
+    apiToken = '6031609600:AAHR8ZT82j7jSIggKLksWl3a-Xc0VFn1dY'
+    chatID = '1631741256'
     apiURL = f'https://api.telegram.org/bot{apiToken}/sendMessage'
 
     try:
