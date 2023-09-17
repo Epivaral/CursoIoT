@@ -1,5 +1,7 @@
-#adicional: control de pantalla OLED
-#mientras se esta conectando para mostrar progreso
+# adicional: control de pantalla OLED
+# mientras se esta conectando para mostrar progreso
+# Codigo adaptado de: https://github.com/tayfunulu/WiFiManager
+
 import ssd1306
 from machine import SoftI2C, Pin
 my_SDA_pin = 21 
